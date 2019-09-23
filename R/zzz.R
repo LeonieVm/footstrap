@@ -12,3 +12,12 @@
 #'
 #' @name footstrap
 "_PACKAGE"
+
+
+	
+.onAttach <- function(libname, pkgname) {
+    # Print a welcome message when the package is attached.
+    cat(rep("-", 20), "\n")
+    cat("It wooooorked `footstrap`!", "\n")
+    cat(rep("-", 20), "\n")
+}

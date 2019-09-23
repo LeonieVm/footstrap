@@ -1,4 +1,4 @@
-#' The title goes here.
+#' Bootstrap Test comparison.
 #'
 #' The subtitle goes here.
 #'
@@ -36,5 +36,8 @@ get_bootstrap <- function(data, statistic, replicates, formula) {
     out$data <- data
     out$formula <- formula
  
+ # Define object class.
+    class(out) <- "boot"
+
     return(out)
 }
