@@ -19,7 +19,7 @@
 #' }
 #' @export
 
-get.bootstrap <- function(data, statistic, replicates, formula) {
+get_bootstrap <- function(data, statistic, replicates, formula) {
     # Get the number of rows.
     n <- nrow(data)
  
